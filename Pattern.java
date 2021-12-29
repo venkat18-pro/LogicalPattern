@@ -38,10 +38,47 @@ public class Pattern {
 			System.out.println("Not a armstrong Number.");
 	}
 	
+	public static void swap() {
+		int a=10, b=20,c;
+		
+		c=a;
+		a=b;
+		b=c;
+		
+		System.out.println("A: "+a);
+		System.out.println("B: "+b);
+	}
+	
+	public static void swap1() {
+		int a=10, b=20;
+		
+		a = a+b;
+		b= a-b;
+		a= a-b;
+		
+		System.out.println("A: "+a);
+		System.out.println("B: "+b);
+	}
+	
+	public static void factorial() {
+		
+		int fact=1;
+		
+		for (int i = 1; i <= 5; i++) {
+			fact *= i;
+		}
+
+		System.out.println("5 Factorial: "+fact);
+		
+	}
+	
 	public static void main(String[] args) {
-		palindrome();
-		EvenOrOdd();
-		armstrong();
+//		palindrome();
+//		EvenOrOdd();
+//		armstrong();
+//		swap();
+//		swap1();
+		factorial();
 	}
 
 }
